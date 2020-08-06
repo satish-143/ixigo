@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Ixigo Suite">
+
+    <parameter name="from" value="Pune" />
+    <parameter name="to" value="Hyderabad" />
+    <parameter name="deptDate" value="17 Sep 2020" />
+    <parameter name="returnDate" value="24 Oct 2020" />
+    <parameter name="travellers" value="2" />
+    <parameter name="maxDeptFare" value="5000" />
+
+    <test name="Validate Search Results">
+        <classes>
+<!--            <class name="com.ixigo.HomePageTest" />-->
+            <class name="com.ixigo.ResultsPageTest" />
+        </classes>
+    </test>
+
+</suite> <!-- Suite -->
